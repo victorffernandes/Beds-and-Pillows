@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript" src="CalculateProductDiscount.js"></script>
+<script type="text/javascript" src="CalculateEmployeeDiscount.js"></script>
+<script type="text/javascript" src="CalculateTotalValue.js"></script>
+<script>
+var ed = new EmployeeDiscount();
+var tv = new TotalValue();
+var pd = new ProductDiscount();
+
+var productBought = ["pillow","pillow","bed","pillow","bed","bed","pillow"];
+var name = "Jorge";
+
+console.log(tv.getValue(productBought)*( 1 - (ed.getDiscount(name)+pd.getDiscount(productBought))) );
+
+</script>
+</head>
+</html>
